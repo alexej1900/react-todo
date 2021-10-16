@@ -1,0 +1,91 @@
+.todoBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2px 0;
+}
+
+.listItemNumber {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid greenyellow;
+  border-radius: 3px;
+}
+
+.listItemContent {
+  width: 60%;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  line-height: 30px;
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+.input {
+  width: 60%;
+  height: 25px;
+}
+
+.noTasks {
+  width: 100%;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.editInput {
+  width: 60%;
+  padding: 0 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background: rgb(194, 193, 193);
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.editInput:active {
+  border: 1px solid gray;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 0;
+}
+
+.editButton {
+  background: rgb(249, 252, 64);
+}
+
+.addButton {
+  background: rgb(102, 252, 64);
+}
+
+.delButton {
+  background: rgb(252, 64, 64);
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgb(252, 136, 82);
+}
+
+button:active {
+  box-shadow: none;
+}
