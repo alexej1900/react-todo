@@ -1,0 +1,28 @@
+.addBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.input {
+  width: 80%;
+  height: 25px;
+  padding: 0 5px;
+}
+
+.addButton {
+  width: 15%;
+  height: 30px;
+  background: rgb(64, 252, 64);
+  border: none;
+  border-radius: 3px;
+}
+
+.load {
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
