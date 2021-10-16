@@ -1,16 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import AppTitle from '../../components/AppTitle/AppTitle';
 import { useSelector, useDispatch } from 'react-redux';
-import { Todos } from '../../store/reducers/todoReducer';
 import TodoListItem from './TodoListItem';
-
+import { Todos } from '../../interfaces';
 import styles from './TodoList.module.css';
 
 const TodoList:React.FunctionComponent = () => {
   const [uncompletedData, setUncompletedData] = useState<Todos[]>([]);
   const [completedData, setCompletedData] = useState<Todos[]>([]);
   const dispatch = useDispatch();
-
   let datas:Todos[] = [];
   datas = useSelector((state)=>state) as Todos[];
 

@@ -1,15 +1,11 @@
-
-
-import { Todos } from '../../store/reducers/todoReducer';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { Todos } from '../../interfaces';
 import styles from './TodoList.module.css';
-
 
 const TodoListItem:React.FunctionComponent<{data: Todos, index: number}> = ({data, index}) => {
   const [edit, setEdit] = useState(false);
   const [value, setValue] = useState('');
-
   const dispatch = useDispatch();
 
   const handleCompletedClick = () => {
@@ -29,6 +25,7 @@ const TodoListItem:React.FunctionComponent<{data: Todos, index: number}> = ({dat
     dispatch({ type: 'SAVE_TODO', payload: value, index: data.id });
     setEdit(false);
   }
+
   return (
     <div className={styles.listItem}>
       <div className={styles.listItemNumber}>
