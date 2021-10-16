@@ -1,3 +1,4 @@
+import { Todos } from '../../interfaces';
 import {
   ADD_TODO,
   TOGGLE_TODO,
@@ -6,13 +7,6 @@ import {
   SET_TODOS,
   ADD_10_TODOS,
 } from '../actionTypes';
-
-export interface Todos {
-  userId?:number;
-  title: string;
-  completed: boolean;
-  id: number;
-};
 
 const initialState:Todos[] = [];
 

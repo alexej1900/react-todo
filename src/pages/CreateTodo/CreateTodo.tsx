@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import AppTitle from '../../components/AppTitle/AppTitle';
 import styles from './CreateTodo.module.css';
 import { useDispatch } from 'react-redux';
-import { Todos } from '../../store/reducers/todoReducer';
+import { Todos } from '../../interfaces';
 
 const CreateTodo:React.FunctionComponent = ()=> {
   const [value, setValue] = useState('');
@@ -24,7 +24,6 @@ const CreateTodo:React.FunctionComponent = ()=> {
         })
     }
   }, [])
-  
 
   const handleClick = () => {
     dispatch({ type: 'ADD_TODO', payload: value });
